@@ -1,0 +1,152 @@
+* {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #f7f5ef;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    /*font-family: Georgia, "Times New Roman", serif;*/
+    font-family: serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #14213d;
+    color: #fff;
+
+    & h2 {
+        letter-spacing: 2px;
+    }
+
+    & ul {
+        padding-left: 0px;
+        margin-top: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        & a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        & a:hover {
+            color: #fca311;
+            text-decoration: underline;
+        }
+    }
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/cafe.jpg");
+    background-color: #14213d;
+    height: 300px;
+
+    & #titol {
+        letter-spacing: 2px;
+        color: #fff;
+        margin: 0px;
+    }
+    & p {
+        color: white;
+        margin: 30px;
+    }
+    & .boto {
+        background-color: rgb(252, 163, 17);
+        color: #14213d;
+        border-radius: 30px;
+        border-style: none;
+        width: 150px;
+        height: 50px;
+    }
+    & .boto:hover {
+        background-color: #fff;
+    }
+    & h1 {
+        font-size: xxx-large;
+        margin-bottom: 0px;
+    }
+}
+
+#products-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+
+    & .targeta {
+        width: 800px;
+        background-color: white;
+        border-width: 2px;
+        border-color: #14213d;
+        border-radius: 15px;
+        border-style: solid;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        & h2 {
+            color: #14213d;
+            font-style: italic;
+            margin: 0px;
+        }
+
+        & .preu {
+            color: rgb(218, 132, 11);
+            font-weight: bold;
+        }
+        & div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        & span {
+            padding-top: 15px;
+        }
+    }
+}
+
+#horari {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    & #horari-content {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*width: 600px;*/
+        background-color: rgba(252, 163, 17, 0.15);
+        border-width: 2px;
+        border-color: #fca311;
+        border-radius: 12px;
+        border-style: dashed;
+
+        & span {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #14213d;
+    color: white;
+}
